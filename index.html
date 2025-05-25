@@ -1,92 +1,496 @@
 <!DOCTYPE html>
-<html lang="uk">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>antools. - Новий вкладка</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-  
-  <header>
-    <nav class="navbar container">
-      <div class="logo">
-        <a href="#">antools.</a>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antools</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">
+          <img src="./images/Group 159 (1).png" alt="Antools Logo" />
+          <span class="logo-text">antools.</span>
+        </div>
+        <nav class="nav-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+            </li>
+            <li><a href="#">My Collections</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+        <div class="auth-buttons">
+          <a href="#" class="btn-login">Login</a>
+          <a href="#" class="btn-signup">Sign Up</a>
+        </div>
       </div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Categories</a></li>
-        <li><a href="#">My Collections</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
-      <div class="auth-buttons">
-        <a href="#" class="btn login">Login</a>
-        <a href="#" class="btn signup">Sign Up</a>
-      </div>
-    </nav>
-  </header>
+    </header>
 
- 
-  <section class="hero">
-    <div class="hero-content container">
-      <h1>Awesome tools for
-        Designer & Developer.</h1>
-      <p>Antool is a web collection of information on paid or free Design and Development tools</p>
-      <form action="#" class="search-form">
-        <input type="text" placeholder="find more than 430+ tools...">
-        <button type="submit">Search</button>
-      </form>
-    </div>
-  </section>
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <h1>
+              Awesome tools for <br />
+              Designer & Developer.
+            </h1>
+            <p>
+              Antool is a web collection of information on paid or <br />
+              free Design and Development tools
+            </p>
+            <div class="search-bar">
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder="Find more than 430+ tools..." />
+              <button class="btn-search">Search</button>
+            </div>
+            <div class="social-icons">
+              <a href="#"
+                ><img
+                  src="./images/bx_bxl-facebook (1).png"
+                  alt="Facebook icon"
+                  class="social-icon-img"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./images/bx_bxl-instagram.png"
+                  alt="Instagram icon"
+                  class="social-icon-img"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./images/bx_bxl-twitter.png"
+                  alt="Twitter icon"
+                  class="social-icon-img"
+              /></a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img
+              src="./images/Mask Group.png"
+              alt="Abstract Design"
+              class="abstract-bg-image"
+            />
+          </div>
+        </div>
+      </section>
 
-  
-  <section class="popular-tools">
+      <section class="most-popular-tools">
+        <div class="container">
+          <div class="section-header">
+            <h2>Most Popular Tools</h2>
+            <p>
+              Tools for the best Designers and Developers <br />
+              most popularly used in the world
+            </p>
+
+          <div class="tools-grid">
+            <div class="tool-card">
+              <div class="card-header">
+                <img src="./images/grommet-icons_figma.png" alt="Figma Logo" />
+                <div>
+                  <h3>Figma</h3>
+                  <p class="tool-status">Free</p>
+                </div>
+              </div>
+              <p class="tool-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="card-actions">
+                <div class="likes">
+                  <img
+                    src="./images/flat-color-icons_like.png"
+                    alt="Like icon"
+                    class="heart-icon"
+                  />
+                  <img
+                    src="./images/eva_folder-add-outline.png"
+                    alt="doc icon"
+                    class="doc-icon"
+                  />
+                </div>
+                <a href="#" class="btn-visit">Visit</a>
+              </div>
+            </div>
+
+            <div class="tool-card">
+              <div class="card-header">
+                <img src="./images/logos_sketch (1).png" alt="Sketch Logo" />
+                <div>
+                  <h3>Sketch</h3>
+                  <p class="tool-status trial">Trial & Paid</p>
+                </div>
+              </div>
+              <p class="tool-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="card-actions">
+                <div class="likes">
+                  <img
+                    src="./images/flat-color-icons_like.png"
+                    alt="Like icon"
+                    class="heart-icon"
+                  />
+                  <img
+                    src="./images/eva_folder-add-outline.png"
+                    alt="doc icon"
+                    class="doc-icon"
+                  />
+                </div>
+                <a href="#" class="btn-visit">Visit</a>
+              </div>
+            </div>
+
+            <div class="tool-card">
+              <div class="card-header">
+                <img
+                  src="./images/logos_visual-studio-code (2).png"
+                  alt="Visual Studio Code Logo"
+                />
+                <div>
+                  <h3>Visual Studio Code</h3>
+                  <p class="tool-status">Free</p>
+                </div>
+              </div>
+              <p class="tool-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="card-actions">
+                <div class="likes">
+                  <img
+                    src="./images/flat-color-icons_like.png"
+                    alt="Like icon"
+                    class="heart-icon"
+                  />
+                  <img
+                    src="./images/eva_folder-add-outline.png"
+                    alt="doc icon"
+                    class="doc-icon"
+                  />
+                </div>
+                <a href="#" class="btn-visit">Visit</a>
+              </div>
+            </div>
+
+            <div class="tool-card">
+              <div class="card-header">
+                <img src="./images/notion (1).png" alt="Notion Logo" />
+                <div>
+                  <h3>Notion</h3>
+                  <p class="tool-status">Free & Paid</p>
+                </div>
+              </div>
+              <p class="tool-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="card-actions">
+               <div class="likes">
+                  <img
+                    src="./images/flat-color-icons_like.png"
+                    alt="Like icon"
+                    class="heart-icon"
+                  />
+                  <img
+                    src="./images/eva_folder-add-outline.png"
+                    alt="doc icon"
+                    class="doc-icon"
+                  />
+                </div>
+                <a href="#" class="btn-visit">Visit</a>
+              </div>
+            </div>
+
+            <div class="tool-card">
+              <div class="card-header">
+                <img src="./images/Group (2).png" alt="Slack Logo" />
+                <div>
+                  <h3>Slack</h3>
+                  <p class="tool-status">Free & Paid</p>
+                </div>
+              </div>
+              <p class="tool-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="card-actions">
+                <div class="likes">
+                  <img
+                    src="./images/flat-color-icons_like.png"
+                    alt="Like icon"
+                    class="heart-icon"
+                  />
+                  <img
+                    src="./images/eva_folder-add-outline.png"
+                    alt="doc icon"
+                    class="doc-icon"
+                  />
+                </div>
+                <a href="#" class="btn-visit">Visit</a>
+              </div>
+            </div>
+
+            <div class="tool-card">
+              <div class="card-header">
+                <img src="./images/logos_invision-icon (1).png" alt="Invision Logo" />
+                <div>
+                  <h3>Invision</h3>
+                  <p class="tool-status">Free & Paid</p>
+                </div>
+              </div>
+              <p class="tool-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="card-actions">
+                <div class="likes">
+                  <img
+                    src="./images/flat-color-icons_like.png"
+                    alt="Like icon"
+                    class="heart-icon"
+                  />
+                  <img
+                    src="./images/eva_folder-add-outline.png"
+                    alt="doc icon"
+                    class="doc-icon"
+                  />
+                </div>
+                <a href="#" class="btn-visit">Visit</a>
+              </div>
+            </div>
+          </div>
+          <div class="load-more">
+            <button class="btn-load-more">Load more</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="trusted-brands-section">
     <div class="container">
-      <h2>Most Popular Tools</h2>
-      <p>Tools for the best Designers and Developers
-        most popularly used in the world</p>
-      <ul class="tools-grid"> 
-        <li class="tool-card"></li>
-        <div class="tools-grid">
-            <div class="tools-grid"></div>
-            <img src="" alt="">
-          <h3>FIGMA</h3>
-          <span class="price">Free</span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </li>
-        
-        <li class="tool-card">
-          <h3>Sketch</h3>
-          <span class="price">Trial & Paid</span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </li>
-       
-        <li class="tool-card">
-          <h3>Visual Studio Code</h3>
-          <span class="price">Free</span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </li>
-        
-        <li class="tool-card">
-          <h3>Notion</h3>
-          <span class="price">Free & Paid</span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </li>
-    
-        <li class="tool-card">
-            <h3>Slack</h3>
-            <span class="price">Free & Paid</span>
-            <p>Lorem ipsum dolor     
-      <div class="load-more">
-        <bu tton type="button">Load more</button>
-      </div>
+        <h2>Trusted more than 150+ brand</h2>
+        <div class="brands-logos">
+            <img src="./images/logos_microsoft.png" alt="Microsoft Logo" class="brand-logo">
+            <img src="./images/logos_google.png" alt="Google Logo" class="brand-logo">
+            <img src="./images/logos_slack.png" alt="Slack Logo" class="brand-logo">
+            <img src="./images/logos_wordpress (1).png" alt="WordPress Logo" class="brand-logo">
+        </div>
     </div>
-  </section>
+</section>
 
-  
- 
-</body>
+      <section class="newcomer-tools">
+        <div class="container">
+          <div class="section-content">
+            <h2>Newcomer Tools</h2>
+            <p>
+              Wow! see the latest update of the most <br />
+              recommended tools from reliable designers <br />
+              and developers
+            </p>
+            <a href="#" class="btn-explore-more">Explore more</a>
+          </div>
+          <div class="newcomer-grid">
+            <div class="tool-card">
+              <div class="card-header">
+                <img src="./images/zeplin.png" alt="Zeplin Logo" />
+                <div>
+                  <h3>Zeplin</h3>
+                  <p class="tool-status">Free & Paid</p>
+                </div>
+              </div>
+              <p class="tool-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="card-actions">
+                <div class="likes">
+                  <img
+                    src="./images/flat-color-icons_like.png"
+                    alt="Like icon"
+                    class="heart-icon"
+                  />
+                  <img
+                    src="./images/eva_folder-add-outline.png"
+                    alt="doc icon"
+                    class="doc-icon"
+                  />
+                </div>
+            </div>
+
+            <div class="tool-card highlighted">
+              <div class="card-header">
+                <img src="./images/jb_phpstorm.png" alt="PHPStorm Logo" />
+                <div>
+                  <h3>PHPStorm</h3>
+                  <p class="tool-status">Free</p>
+                </div>
+              </div>
+              <p class="tool-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="card-actions">
+                <div class="likes">
+                  <img
+                    src="./images/flat-color-icons_like.png"
+                    alt="Like icon"
+                    class="heart-icon"
+                  />
+                  <img
+                    src="./images/eva_folder-add-outline.png"
+                    alt="doc icon"
+                    class="doc-icon"
+                  />
+                </div>
+                <a href="#" class="btn-visit">Visit</a>
+              </div>
+            </div>
+
+            <div class="tool-card">
+              <div class="card-header">
+                <img src="./images/jb_toolbox_app.png" alt="Toolbox Logo" />
+                <div>
+                  <h3>Toolbox</h3>
+                  <p class="tool-status">Free</p>
+                </div>
+              </div>
+              <p class="tool-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="card-actions">
+                <div class="likes">
+                  <img
+                    src="./images/flat-color-icons_like.png"
+                    alt="Like icon"
+                    class="heart-icon"
+                  />
+                  <img
+                    src="./images/eva_folder-add-outline.png"
+                    alt="doc icon"
+                    class="doc-icon"
+                  />
+                </div>
+                <a href="#" class="btn-visit">Visit</a>
+              </div>
+            </div>
+
+            <div class="tool-card">
+              <div class="card-header">
+                <img src="./images/procreate.png" alt="Procreate Logo" />
+                <div>
+                  <h3>Procreate</h3>
+                  <p class="tool-status trial">Paid</p>
+                </div>
+              </div>
+              <p class="tool-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="card-actions">
+                <div class="likes">
+                  <img
+                    src="./images/flat-color-icons_like.png"
+                    alt="Like icon"
+                    class="heart-icon"
+                  />
+                  <img
+                    src="./images/eva_folder-add-outline.png"
+                    alt="doc icon"
+                    class="doc-icon"
+                  />
+                </div>
+                <a href="#" class="btn-visit">Visit</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section">
+    <div class="container">
+        <div class="testimonial-card">
+            <div class="testimonial-image">
+                <img src="./images/Group 1419.png" alt="Ronald Richards" />
+            </div>
+            <div class="testimonial-content">
+                <blockquote>
+                    Incididunt cillum do sint sent enim ullamco id deserunt mollit
+                    qui reprehenderit do velit eu tempor cillum ad sint occaecat
+                    do nulla velit labore occaecat do deserunt Lorem magna
+                    officia incididunt consectetur amet. Sunt consectetur veniam
+                    minim ex commodo sint non. Occaecat aute officia excepteur
+                    non labore id qui ad.
+                </blockquote>
+                <div class="author-info">
+                    <p class="author-name">Ronald Richards</p>
+                    <p class="author-title">Product Manager</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button class="carousel-button prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-button next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+      <section class="contributor-section">
+        <div class="container">
+          <h2>Become a contributor?</h2>
+          <p>
+            Join us and get tips & tricks to become a great <br />
+            Designer and Developer
+          </p>
+          <div class="subscribe-form">
+            <input type="email" placeholder="Enter your email..." />
+            <button class="btn-join-us">Join Us</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-col about-us">
+          <div class="logo">
+            <img
+              src="./images/Group 159 (1).png"
+              alt="Antools Logo"
+            />
+            <span class="logo-text">antools.</span>
+          </div>
+          <p>Copyright 2021. Antools</p>
+          <p>
+            Antool is a web collection of information on paid or free Design and
+            Development tools
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <p>+621987463</p>
+          <p>M Building, No.10 A</p>
+          <p>antools@awesome.com</p>
+        </div>
+        <div class="footer-col">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Development</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Company Info</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Partners</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
